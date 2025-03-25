@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css files/mycheckout.css">
+</head>
+<body>
+    
+
+
+    <div class="contenar">
+        <button type="submit" class="btn" onclick="openpopup()">submit</button>
+        <div class="popup" id="popup">
+            <!--<img src="check-mark-royalty-free-stock-photography-clip-art-green-tick.jpg" alt="" height="300px">
+            <h2>thank you</h2>
+            <p>your details has been successfully submit. </p>--->
+
+
+            <div class="user-form">
+
+                <div class="title">
+                    <h1>Billing Address</h1></div>
+
+                 <input type="text" name="name" placeholder="User Name" class="contact-inputs" required>
+                 <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required >
+                 <input type="text" name="Address" placeholder="Your Address" class="contact-inputs" required >
+                 <input type="text" name="city" placeholder="Your City" class="contact-inputs" required >
+                 <input type="text" name="state" placeholder="Your State" class="contact-inputs" required >
+                 <input type="number" name="number" placeholder="Zip" class="contact-inputs" required >
+
+
+                 
+
+            </div>
+
+
+            <button type="button" onclick="closepopup()">Continue To Checkout</button>
+        </div>
+
+    </div>
+
+    <script src="../js files/mycheckout.js"></script>
+</body>
+</html>

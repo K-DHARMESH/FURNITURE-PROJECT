@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEST CHAIR FOR YOUR HOME</title>
+  <link rel="stylesheet" href="../css files/cartadd.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="../css files/mycheckout.css">
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+
+      <div class="nav__logo"><a href="#">FURNITURE</a></div>
+    
+      
+      <a href="../html files/index.html" ><li class="link">HOME</li></a>
+
+      <a href="" target="O"><li class="link">ABOUTS</li></a>
+
+      <a href="../html files/log.html" ><li class="link">BLOG</li></a>
+
+
+      <a href="../html files/contact.html"> <li class="link">CONTACT</li></a>
+    
+
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+    <!--  <a href="checkou.html"><button class="btn-buy">Place Order</button></a>-->
+      <button type="submit" class="btn-buy" onclick="openpopup()">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+
+  <!--------------------------------------------cHAIR SECTION------------------------------->
+  <div class="container">
+    <h2 class="title" style="color: blue; font-weight: bolder;">BEST CHAR FOR YOUR HOME</h2>
+    <div class="shop-content">
+
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="../IMG2/amazon3.jpg" class="food-img">
+        </div>
+        <h2 class="food-title"> Lumbar Back Support Mesh Office Arm Chair</h2>
+        <span class="food-price">Rs.3790</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/best chair.webp" class="food-img"></div>
+        <h2 class="food-title">Febric Bar Chair</h2>
+        <span class="food-price">Rs.4980</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/1a18eb85.jpeg" class="food-img"></div>
+        <h2 class="food-title">Lumbar Back Support Mesh Office Arm Pink Chair</h2>
+        <span class="food-price">Rs.3500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/chair6.jpg" class="food-img"></div>
+        <h2 class="food-title">Velvet Bedroom Modern ArmChair</h2>
+        <span class="food-price">Rs.6700</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/chair7.jpg" class="food-img"></div>
+        <h2 class="food-title">Iron Framing Golden Chair</h2>
+        <span class="food-price">Rs.4900</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/chair7.webp" class="food-img"></div>
+        <h2 class="food-title">Leg Rest Gaming Chair</h2>
+        <span class="food-price">Rs.12999</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/swivel 2.jpg" class="food-img"></div>
+        <h2 class="food-title">Aluminum Alloy 4 leg round Chair</h2>
+        <span class="food-price">Rs.11200</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card5.png" class="food-img"></div>
+        <h2 class="food-title">Comfortable Holend Velvet Chair</h2>
+        <span class="food-price">Rs.1499</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+    </div>
+   
+
+  </div>
+  </div>
+
+  <div class="contenar">
+
+    <div class="popup" id="popup">
+        <div class="contact-container">
+          <form action="connect.php" method="POST" class="contact-left">
+              <div class="contact-left-title">
+                  <h2>continue order</h2>
+                  <hr>
+              </div>
+               <input type="text" name="firstName" placeholder="FIRST NAME" class="contact-inputs" required>
+               <input type="text" name="lastName" placeholder="LAST NAME" class="contact-inputs" required>
+               <input type="text" name="state" placeholder="YOUR STATE" class="contact-inputs" required>
+               <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
+               <input type="number" name="number" placeholder="MOBILE NO" class="contact-inputs" required>
+               <input type="number" name="pincode" placeholder="PINCODE" class="contact-inputs" required>
+               
+        
+              <!--- <textarea name="message" placeholder="YOUR MESSAGE" class="contact-inputs" required></textarea>-->
+               <button type="submit">submit  <img src="" alt=""></button>
+               <button type="SUMBIT2" onclick="closepopup()">Cancel Order</button>
+          </form>
+          <div class="contact-right">
+        
+          
+        </div>
+        </div>
+    </div>
+
+  <script src="../js files/addcart.js"></script>
+
+  <script>
+     let popup = document.getElementById("popup");
+
+function openpopup(){
+
+    popup.classList.add("open-popup");
+}
+function closepopup(){
+
+popup.classList.remove("open-popup");
+      }
+  </script>
+</body>
+</html>

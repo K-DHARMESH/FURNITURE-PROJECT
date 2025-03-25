@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css files/cartadd.css">
+
+  <link rel="stylesheet" href="../css files/mycheckout.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+      <!--<a href="#" class="logo">
+        <ion-icon name="fast-food"></ion-icon>
+        Food Delight
+      </a>-->
+
+
+      <div class="nav__logo"><a href="#">FURNITURE</a></div>
+    
+      
+      <a href="../html files/index.html" ><li class="link">HOME</li></a>
+
+      <a href="../html files/about.html" target="O"><li class="link">ABOUTS</li></a>
+
+      <a href="../html files/log.html" ><li class="link">BLOG</li></a>
+
+
+      <a href="../html files/contact.html"> <li class="link">CONTACT</li></a>
+    
+        
+     <!-- <a href="login.html"> <button class="login-button">LOGIN</button></a>-->
+    
+
+      <div class="box">
+        <div class="cart-count">0</div>
+       <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <!--<a href=""><button class="btn-buy" > Place Order</button></a>-->
+      <button type="submit" class="btn-buy" onclick="openpopup()"> Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+      </div>
+    
+    </div>
+  </header>
+
+
+  <div class="container">
+    <h2 class="title" style="color: red; font-weight: bolder;">TREANDLY FURNITURES</h2>
+    <div class="shop-content">
+
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="../IMG/card1.png" class="food-img">
+        </div>
+        <h2 class="food-title">sofa</h2>
+        <span class="food-price">Rs.4000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card3.png" class="food-img"></div>
+        <h2 class="food-title">Morden Chair</h2>
+        <span class="food-price">Rs.2500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card4.png" class="food-img"></div>
+        <h2 class="food-title">New style Chair</h2>
+        <span class="food-price">Rs.1500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card5.png" class="food-img"></div>
+        <h2 class="food-title">Black Chair </h2>
+        <span class="food-price">Rs.1900</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card6.png" class="food-img"></div>
+        <h2 class="food-title">Sofa</h2>
+        <span class="food-price">Rs.2500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card7.png" class="food-img"></div>
+        <h2 class="food-title">Table</h2>
+        <span class="food-price">Rs.4000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card8.png" class="food-img"></div>
+        <h2 class="food-title">Home Furniture</h2>
+        <span class="food-price">Rs.4000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card2.png" class="food-img"></div>
+        <h2 class="food-title">Sofa Chair</h2>
+        <span class="food-price">Rs.3500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card4.png" class="food-img"></div>
+        <h2 class="food-title">Chair</h2>
+        <span class="food-price">Rs.1600</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card3.png" class="food-img"></div>
+        <h2 class="food-title">White Chair</h2>
+        <span class="food-price">Rs.1900</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card7.png" class="food-img"></div>
+        <h2 class="food-title">Table</h2>
+        <span class="food-price">Rs.3600</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+     
+      <div class="food-box">
+        <div class="pic"><img src="../IMG/card5.png" class="food-img"></div>
+        <h2 class="food-title">Black Chair</h2>
+        <span class="food-price">Rs.1200</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/1a18eb85.jpeg" class="food-img"></div>
+        <h2 class="food-title">Pink Chair</h2>
+        <span class="food-price">Rs.2500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/chair6.jpg" class="food-img"></div>
+        <h2 class="food-title">Black Sofa Chair</h2>
+        <span class="food-price">Rs.3200</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/chair7.jpg" class="food-img"></div>
+        <h2 class="food-title">Chair For Love</h2>
+        <span class="food-price">Rs.2000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/chair7.webp" class="food-img"></div>
+        <h2 class="food-title">Gaming Chair</h2>
+        <span class="food-price">Rs.4300</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+     
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/home bed 5.jpg" class="food-img"></div>
+        <h2 class="food-title">White Bed</h2>
+        <span class="food-price">Rs.15000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/home bed 6.jpg" class="food-img"></div>
+        <h2 class="food-title">Blue Bed</h2>
+        <span class="food-price">Rs.11000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/home bed 7.avif" class="food-img"></div>
+        <h2 class="food-title">Room Bed</h2>
+        <span class="food-price">Rs.6000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/home bed 8.jpg" class="food-img"></div>
+        <h2 class="food-title">Morden Bed</h2>
+        <span class="food-price">Rs.7000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/book case 2.jpg" class="food-img"></div>
+        <h2 class="food-title">Morden Book Case</h2>
+        <span class="food-price">Rs.3000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/book case 3.jpg" class="food-img"></div>
+        <h2 class="food-title">book Case</h2>
+        <span class="food-price">Rs.2700</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/swivel 6.jpg" class="food-img"></div>
+        <h2 class="food-title">Wood Chair new</h2>
+        <span class="food-price">Rs.2200</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/swivel 7.webp" class="food-img"></div>
+        <h2 class="food-title">Swivel Chair</h2>
+        <span class="food-price">Rs.1200</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/swivel 13.webp" class="food-img"></div>
+        <h2 class="food-title">Wood Chair</h2>
+        <span class="food-price">Rs.3400</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table9.jpg" class="food-img"></div>
+        <h2 class="food-title">Home Sofa</h2>
+        <span class="food-price">Rs.12000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table12.jpg" class="food-img"></div>
+        <h2 class="food-title">New sofa</h2>
+        <span class="food-price">Rs.5000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table5.jpg" class="food-img"></div>
+        <h2 class="food-title">Blue Sofa  </h2>
+        <span class="food-price">Rs.7000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/office3.webp" class="food-img"></div>
+        <h2 class="food-title">Office Table</h2>
+        <span class="food-price">Rs.1200</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/office4.jpg" class="food-img"></div>
+        <h2 class="food-title">Table New</h2>
+        <span class="food-price">Rs.1999</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/office5.webp" class="food-img"></div>
+        <h2 class="food-title">Wood Table for Office</h2>
+        <span class="food-price">Rs.2500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/book case 6.avif" class="food-img"></div>
+        <h2 class="food-title">Book Case</h2>
+        <span class="food-price">Rs.1500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/study5.webp" class="food-img"></div>
+        <h2 class="food-title">Study Table</h2>
+        <span class="food-price">Rs.1000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/study10.webp" class="food-img"></div>
+        <h2 class="food-title">Pink Study Table</h2>
+        <span class="food-price">Rs.1500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/study8.webp" class="food-img"></div>
+        <h2 class="food-title">Wood Study Table</h2>
+        <span class="food-price">Rs.2300</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/styles sofa6.webp" class="food-img"></div>
+        <h2 class="food-title">Home Sofa</h2>
+        <span class="food-price">Rs.4000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/styles sofa7.jpg" class="food-img"></div>
+        <h2 class="food-title">New Sofa</h2>
+        <span class="food-price">Rs.4300</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/styles sofa8.JPG" class="food-img"></div>
+        <h2 class="food-title">Styles Sofa</h2>
+        <span class="food-price">Rs.6000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../img3/kitchen-interior-design-with-wooden-table.jpg" class="food-img"></div>
+        <h2 class="food-title">Kitchen Set</h2>
+        <span class="food-price">Rs.6500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../img3/HD-wallpaper-blue-classic-kitchen-furniture-modern-interior-design-stylish-kitchen-design-classic-style-modern-classic-style-kitchen.jpg" class="food-img"></div>
+        <h2 class="food-title">Full Kitchen Set</h2>
+        <span class="food-price">Rs.5500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../img3/beautiful-kitchen-interior-design_23-2150976606.avif" class="food-img"></div>
+        <h2 class="food-title">Table For Kitchen</h2>
+        <span class="food-price">Rs.2500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../img3/kitchen_furniture_sink_table_70080_1280x720.jpg" class="food-img"></div>
+        <h2 class="food-title">Morden Kitchen Furniture</h2>
+        <span class="food-price">Rs.3000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+      <div class="food-box">
+        <div class="pic"><img src="../img3/360_F_849056076_VXmf6g4MMjXuctvYrqGlJlNCPj4EAIQt.jpg" class="food-img"></div>
+        <h2 class="food-title">New Morden Kitchen Set</h2>
+        <span class="food-price">Rs.6500</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../img3/modular-kitchen-furniture.jpg" class="food-img"></div>
+        <h2 class="food-title">One Room Kitchen Set</h2>
+        <span class="food-price">Rs.5300</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+    </div>   
+  </div>
+  
+  <div class="contenar">
+
+    <div class="popup" id="popup">
+        <div class="contact-container">
+          <form action="connect.php" method="POST" class="contact-left">
+              <div class="contact-left-title">
+                  <h2>continue order</h2>
+                  <hr>
+              </div>
+              <!--<input type="hidden" name="access_key" value="1eaf960c-7484-4072-81f1-fb5799b64421">-->
+        
+               <input type="text" name="firstName" placeholder="FIRST NAME" class="contact-inputs" required>
+               <input type="text" name="lastName" placeholder="LAST NAME" class="contact-inputs" required>
+               <input type="text" name="state" placeholder="YOUR STATE" class="contact-inputs" required>
+               <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
+               <input type="number" name="number" placeholder="MOBILE NO" class="contact-inputs" required maxlength="10" >
+               <input type="number" name="pincode" placeholder="PINCODE" class="contact-inputs" required>
+               
+        
+              <!--- <textarea name="message" placeholder="YOUR MESSAGE" class="contact-inputs" required></textarea>-->
+               <button type="submit">submit  <img src="" alt=""></button>
+               <button type="submit" onclick="closepopup()">Cancel Order</button>
+          </form>
+          <div class="contact-right">
+        
+          
+        </div>
+        </div>
+        
+        
+        <!--<button type="button" onclick="closepopup()">Cancel The Checkout</button>-->
+    </div>
+</div>
+
+<script src="../js files/mycheckout.js"></script>
+<script src="../js files/addcart.js"></script>
+</body>
+</html>

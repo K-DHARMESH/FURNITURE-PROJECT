@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME SOFA-TABLES</title>
+  <link rel="stylesheet" href="../css files/cartadd.css">
+  <link rel="stylesheet" href="../css files/mycheckout.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+
+      <div class="nav__logo"><a href="#">FURNITURE</a></div>
+    
+      
+      <a href="../html files/index.html" ><li class="link">HOME</li></a>
+
+      <a href="" target="O"><li class="link">ABOUTS</li></a>
+
+      <a href="../html files/log.html" ><li class="link">BLOG</li></a>
+
+
+      <a href="../html files/contact.html"> <li class="link">CONTACT</li></a>
+    
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <!--<a href="checkou.html"><button class="btn-buy">Place Order</button></a>-->
+      <button type="submit" class="btn-buy" onclick="openpopup()">Place Order</button>
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h2 class="title" style="color: blue; font-weight: bolder;">BEST TABLE-SOFA FOR YOUR HOME</h2>
+    <div class="shop-content">
+
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="../IMG2/sofa-table11.jpg" class="food-img">
+        </div>
+        <h2 class="food-title">Premium LHS 8 Sofa set </h2>
+        <span class="food-price">Rs.23749</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table9.jpg" class="food-img"></div>
+        <h2 class="food-title">Solid wood Fabric sofa set</h2>
+        <span class="food-price">Rs.20000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table12.jpg" class="food-img"></div>
+        <h2 class="food-title">Jute Fabric sofa set</h2>
+        <span class="food-price">Rs.25000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table5.jpg" class="food-img"></div>
+        <h2 class="food-title">Circle Fabric sofa set</h2>
+        <span class="food-price">Rs.50000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table7.jpg" class="food-img"></div>
+        <h2 class="food-title">Tulip Fabric sofa set</h2>
+        <span class="food-price">Rs.40000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table6.jpg"food-img"></div>
+        <h2 class="food-title">Factory Fabric sofa set</h2>
+        <span class="food-price">Rs.21740</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table8.jpg" class="food-img"></div>
+        <h2 class="food-title">Seater sofa set</h2>
+        <span class="food-price">Rs.12399</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="../IMG2/sofa-table10.jpg" class="food-img"></div>
+        <h2 class="food-title">Circle Premium sofa set</h2>
+        <span class="food-price">Rs.61440</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenar">
+
+    <div class="popup" id="popup">
+        <div class="contact-container">
+          <form action="connect.php" method="POST" class="contact-left">
+              <div class="contact-left-title">
+                  <h2>get in touch</h2>
+                  <hr>
+              </div>
+               <input type="text" name="firstName" placeholder="FIRST NAME" class="contact-inputs" required>
+               <input type="text" name="lastName" placeholder="LAST NAME" class="contact-inputs" required>
+               <input type="text" name="state" placeholder="YOUR STATE" class="contact-inputs" required>
+               <input type="email" name="email" placeholder="Email" class="contact-inputs" required>
+               <input type="number" name="number" placeholder="MOBILE NO" class="contact-inputs" required>
+               <input type="number" name="pincode" placeholder="PINCODE" class="contact-inputs" required>
+               
+        
+              <!--- <textarea name="message" placeholder="YOUR MESSAGE" class="contact-inputs" required></textarea>-->
+               <button type="submit">submit  <img src="" alt=""></button>
+               <button type="SUMBIT2" onclick="closepopup()">Cancel Order</button>
+          </form>
+          <div class="contact-right">
+        
+          
+        </div>
+        </div>
+    
+    </div>
+  <script src="../js files/addcart.js"></script>
+
+  <script src="../js files/mycheckout.js"></script>
+</body>
+</html>

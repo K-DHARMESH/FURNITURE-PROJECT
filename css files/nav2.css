@@ -1,0 +1,29 @@
+a{
+    margin: 8px;
+}
+
+.btn{
+    font-size: 30px;
+    display: none;
+    text-align: center;
+}
+
+.bc
+{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:480px) {
+
+    .bb {
+        display: none;
+
+    }
+
+    .btn{
+        display: block;
+    }
+    
+}

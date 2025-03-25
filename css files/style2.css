@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+
+:root {
+  --primary-color: #669ccb;
+  --primary-color-dark: #5681a7;
+  --secondary-color: #e8f1fa;
+  --text-dark: #282d31;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.country__card {
+    background-color: var(--extra-light);
+    
+  }
+  
+  .country__name {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .button
+{
+  background-color: rgb(210, 188, 188);
+  font-weight: bolder;
+  
+  
+}
+
+.button:hover
+{
+   
+    background-color: green;
+    cursor: pointer;
+    
+}
+
+.country__name i {
+    font-size: 1.2rem;
+  }
+  
+  .country__name span {
+    font-style: italic;
+  }
+
+  .journey__container {
+    background-color: var(--secondary-color);
+  }
+  
+  .journey__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .country__card {
+    background-color: var(--extra-light);
+    
+  }
